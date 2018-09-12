@@ -7,10 +7,10 @@ body {
 .menu {
 
 }
-.menu__list {
-  display: none;
-}
+/*.menu__list {*/
+  /*display: none;*/
+/*}*/
 
-.target:hover + .menu__list {
-  display: block;
-}
+/*.target:hover + .menu__list {*/
+  /*display: block;*/
+/*}*/

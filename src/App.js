@@ -22,22 +22,24 @@ const ChildMenu = ({value}) => {
     }
 };
 
-const MenuList = ({data}) => {
-    return data.map(({label, value}, i) => {
-        return (
-            <Menu key={i} target={label}>
-                <ChildMenu value={value} />
-            </Menu>
-        )
-    })
+class MenuList  extends Component {
+    render() {
+        return this.props.data.map(({label, value}, i) => {
+            return (
+                <div>
+                    <Menu key={label} target={label}>
+                        <ChildMenu value={value} />
+                    </Menu>
+                </div>
+            )
+        })
+    };
 };
 
 class App extends Component {
     constructor() {
         super();
     }
-
-
 
   render() {
     return (
